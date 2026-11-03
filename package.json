@@ -1,0 +1,47 @@
+{
+  "name": "dsh-jev-screen",
+  "version": "0.3.0",
+  "description": "Jev（OpenJev/Codiv）驱动的本地文件语义海选：代码遍历目录，Jev 逐文件打分，把几十个候选收敛成几个短名单，供 Agent 终审。",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "chaoguang668",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaoguang668/dsh-jev-screen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chaoguang668/dsh-jev-screen/issues"
+  },
+  "homepage": "https://github.com/chaoguang668/dsh-jev-screen#readme",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "jev",
+    "typesafe",
+    "openjev",
+    "codiv",
+    "semantic-search",
+    "rerank",
+    "system-one"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

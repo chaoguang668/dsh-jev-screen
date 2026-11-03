@@ -1,0 +1,30 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 凭据与环境（永不入库）
+.env
+.env.*
+!.env.example
+credentials*
+.credentials*
+*.key
+*.pem
+*.pfx
+*.p12
+.npmrc
+.netrc
+.git-credentials
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# 临时产物
+*.log
+*.tmp
+.tmp*/
+*.tgz
